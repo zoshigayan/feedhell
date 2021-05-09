@@ -1,0 +1,11 @@
+{{ define "feed/show" }}
+
+<h1>{{ .Feed.Title }}</h1>
+
+<ul>
+{{ range .Entries }}
+<li><a href="{{ .Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+
+{{ end }}

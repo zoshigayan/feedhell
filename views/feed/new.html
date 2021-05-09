@@ -1,0 +1,19 @@
+{{ define "feed/new" }}
+
+<form action="/feeds/new" method="post">
+  <label>
+    <span>URL</span>
+    <input type="text" name="Link">
+  </label>
+  <label>
+    <span>タイトル</span>
+    <input type="text" name="Title">
+  </label>
+  <label>
+    <span>概要</span>
+    <input type="text" name="Description">
+  </label>
+  <button type="submit">追加</button>
+</form>
+
+{{ end }}

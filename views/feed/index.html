@@ -1,0 +1,19 @@
+{{ define "feed/index" }}
+
+<ul>
+{{ range .Feeds }}
+<li><a href="/feeds/{{ .ID }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+
+<a href="/feeds/new">追加</a>
+<button type="button" onclick="sync()">同期</button>
+
+<script>
+  function sync() {
+    fetch("/sync", {
+      method: "post",
+    });
+  }
+</script>
+{{ end }}

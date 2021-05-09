@@ -1,0 +1,5 @@
+# ビルドしたやつ
+rss_reader
+
+# ローカルテスト用のSQLite
+rss_reader.db

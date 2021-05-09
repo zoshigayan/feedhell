@@ -2,8 +2,8 @@ package services
 
 import (
 	"github.com/mmcdole/gofeed"
-	"github.com/zoshigayan/rss_reader/db"
-	"github.com/zoshigayan/rss_reader/models"
+	"github.com/zoshigayan/feedhell/db"
+	"github.com/zoshigayan/feedhell/models"
 	"log"
 )
 

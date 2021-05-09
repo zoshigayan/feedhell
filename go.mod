@@ -1,4 +1,4 @@
-module github.com/zoshigayan/rss_reader
+module github.com/zoshigayan/feedhell
 
 go 1.16
 

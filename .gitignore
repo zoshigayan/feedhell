@@ -1,5 +1,5 @@
 # ビルドしたやつ
-rss_reader
+feedhell
 
 # ローカルテスト用のSQLite
-rss_reader.db
+feedhell.db

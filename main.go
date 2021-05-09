@@ -3,9 +3,9 @@ package main
 import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/zoshigayan/rss_reader/config"
-	"github.com/zoshigayan/rss_reader/controllers"
-	"github.com/zoshigayan/rss_reader/db"
+	"github.com/zoshigayan/feedhell/config"
+	"github.com/zoshigayan/feedhell/controllers"
+	"github.com/zoshigayan/feedhell/db"
 	"net/http"
 )
 

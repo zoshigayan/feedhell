@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"github.com/labstack/echo/v4"
-	// "github.com/zoshigayan/rss_reader/db"
-	// "github.com/zoshigayan/rss_reader/models"
+	// "github.com/zoshigayan/feedhell/db"
+	// "github.com/zoshigayan/feedhell/models"
 	"net/http"
 )
 

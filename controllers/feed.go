@@ -4,6 +4,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/zoshigayan/rss_reader/db"
 	"github.com/zoshigayan/rss_reader/models"
+	"github.com/zoshigayan/rss_reader/services"
 	"log"
 	"net/http"
 )
@@ -51,9 +52,14 @@ func (fc FeedController) New(c echo.Context) error {
 func (fc FeedController) Create(c echo.Context) error {
 	db := db.DbManager()
 
+	title, description, err := services.GetFeedInfo(c.FormValue("Link"))
+	if err != nil {
+		return c.String(http.StatusInternalServerError, err.Error())
+	}
+
 	feed := models.Feed{
-		Title:       c.FormValue("Title"),
-		Description: c.FormValue("Description"),
+		Title:       title,
+		Description: description,
 		Link:        c.FormValue("Link"),
 	}
 	result := db.Create(&feed)
